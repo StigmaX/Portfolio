@@ -73,3 +73,42 @@ button.content-1{
     border: none;
     max-width: fit-content;
 }
+/*content-2*/
+.content-2-img {
+    background-color: white;
+    margin: 2px;
+    border: 3px solid rgb(0, 163, 238);
+    border-radius:20px;
+
+}
+.content-2-container {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom: 80px;
+}
+
+.content-2 {
+    display: flex;
+    gap:20px;
+    flex-direction:row;
+}
+.content-2-items {
+    display: flex;
+    align-items: center;
+    max-width: min-content;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.content-2-title {
+    font-size: 30px;
+    font-weight:900;
+    margin: 20px;
+}
+.content-2-subtext {
+    color: grey;
+    text-align: center;
+    width: auto;
+    
+}
