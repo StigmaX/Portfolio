@@ -33,9 +33,9 @@ a:link {
   }
 
 #userpic{
-    border-radius:50%;
+    border-radius:25%;
     width: 100px;
-    height:100px;
+    height:auto;
     padding: 10px;
 }
 
@@ -48,6 +48,10 @@ a:link {
     right: 0;
     left: 0;
     position: fixed;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(-45deg, #1C6EA4 0%, #2388CB 20%, #000000 100%);
+    background: -webkit-linear-gradient(-45deg, #1C6EA4 0%, #2388CB 20%, #000000 100%);
+    background: linear-gradient(135deg, #1C6EA4 0%, #2388CB 20%, #000000 100%);
 }
 
 .header ul {
@@ -64,11 +68,13 @@ a:link {
     list-style-type: none;
     padding: 10px;
     color: #ffffff;
+    font-size: 20px;
 }
 
 .h-logo {
     margin-right: auto;
     font-weight: bold;
+    font-size: 30px;
 }
 
 /*content-1*/
@@ -76,17 +82,17 @@ a:link {
     display: flex;
     flex-direction:column;
     justify-content: space-between;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-left: 5px;
 }
 .content-1{
     display: flex;
     background-color: #1f2937;
-    padding-top: 5vh;
+    padding-top: 10vh;
     justify-content: space-around;
     padding-bottom: 5vh;
     flex-wrap: wrap;
     justify-content:center;
+    align-items: center;
 
 }
 
@@ -94,8 +100,11 @@ a:link {
 .content-text {
     color: #ffffff;
 }
+.content-desc {
+    font-size: 24px;
+}
 .content-text {
-    font-size: 48px;
+    font-size: 70px;
 }
 button.content-1{
     background-color:#0084ff;
@@ -110,16 +119,20 @@ button.content-1{
 }
 /*content-2*/
 .content-2-img {
-    background-color: white;
+    background-color: rgb(70, 1, 1);
     margin: 2px;
-    border: 3px solid rgb(0, 163, 238);
     border-radius:20px;
-
+    width: 200px;
+    transition: 0.3s;
+    height: 200px;
 }
+
+
 .content-2-container {
     display: flex;
     flex-direction:column;
     align-items:center;
+    /* background-image: url('../images/galaxy.jpg'); */
     margin-bottom: 80px;
 }
 
@@ -134,20 +147,37 @@ button.content-1{
     display: flex;
     align-items: center;
     max-width: min-content;
+    margin: 20px 20px;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    transition: 0.3s;
 }
+
+.content-2-img:hover {
+    box-shadow: 0px 0px 15px 5px #000000;
+}
+
+.content-2-items:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
 .content-2-title {
     font-size: 30px;
     font-weight:900;
     margin: 20px;
+    margin-top: 50px;
 }
 .content-2-subtext {
     color: grey;
     text-align: center;
     width: auto;
-    
+    transition: 0.3s;
+}
+.content-2-subtext:hover {
+    transform: scale(1.3);
 }
 
 /*content 3*/
