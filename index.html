@@ -4,55 +4,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!--header-->
     <div class="header">
       <ul>
-        <li class="h-logo">Header Logo</li>
-        <li>header link one</li>
-        <li>header link two</li>
-        <li>header link three</li>
+        <li class="h-logo">Portfolio</li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#article">Others</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </div>
     <!--content-1-->
-    <div class="content-1">
+    <div id="about" class="content-1">
       <div class="container-content-1">
-        <div class="content-text">This website is awesome</div>
+        <div class="content-text">Hello!</div>
         <div class="content-desc">
-          This website has some subtext that goes here under the main title.
-          it's smaller font and the color is lower contrast
+          My name is Wildan Kusnaedi, this website contains projects that i made
+          in the past. <br />my full information is in the button below.
         </div>
-        <button class="content-1">Sign Up</button>
+        <button class="content-1">CV</button>
       </div>
-      <img src="./images/galaxy.jpg" alt="galaxy images" />
+
+      <img src="./images/user.jpg" alt="galaxy images" id="userpic" />
     </div>
     <!--content-2-->
-    <div class="content-2-container">
+    <div id="portfolio" class="content-2-container">
       <div class="content-2-title">some randow information.</div>
       <div class="content-2">
         <!--item-->
         <div class="content-2-items">
-          <img src="images/download.png" alt="" class="content-2-img" />
+          <img src="./images/download.png" alt="" class="content-2-img" />
           <div class="content-2-subtext">
             this is some subtext under an illustration of image
           </div>
         </div>
         <div class="content-2-items">
-          <img src="images/download.png" alt="" class="content-2-img" />
+          <img src="./images/download.png" alt="" class="content-2-img" />
           <div class="content-2-subtext">
             this is some subtext under an illustration of image
           </div>
         </div>
         <div class="content-2-items">
-          <img src="images/download.png" alt="" class="content-2-img" />
+          <img src="./images/download.png" alt="" class="content-2-img" />
           <div class="content-2-subtext">
             this is some subtext under an illustration of image
           </div>
         </div>
         <div class="content-2-items">
-          <img src="images/download.png" alt="" class="content-2-img" />
+          <img src="./images/download.png" alt="" class="content-2-img" />
           <div class="content-2-subtext">
             this is some subtext under an illustration of image
           </div>
@@ -60,7 +74,7 @@
       </div>
     </div>
     <!--content-3-->
-    <div class="content-3-container">
+    <div id="article" class="content-3-container">
       <div class="caption">
         This is inspiring quote, or a testimonial from a customer. Maybe it's
         just filling up space, or maybe people will actually read it. Who knows?
@@ -69,7 +83,7 @@
       <div class="quoter">Thor, Son of Odin</div>
     </div>
     <!--content-4-->
-    <div class="content-4-container">
+    <div id="contact" class="content-4-container">
       <div>
         <div style="font-size: 20px; font-weight: bold">
           Call to action! it's time!

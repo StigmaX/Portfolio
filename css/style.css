@@ -1,15 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     margin: 0;
 }
 
-img {
-    flex: auto;
-    height: 20vh;
-    width: auto;
-    margin-right:10vh;
+/*link*/
+a:link {
+    color: rgb(0, 102, 128);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(192, 251, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(0, 247, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+#userpic{
+    border-radius:50%;
+    width: 100px;
+    height:100px;
+    padding: 10px;
 }
 
 /*header*/
@@ -18,14 +45,19 @@ img {
     display: flex;
     background-color: #1f2937;
     flex-direction: row;
+    right: 0;
+    left: 0;
+    position: fixed;
 }
 
 .header ul {
     display: flex;
     flex-direction: row;
     flex: 1;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .header ul li {
@@ -43,7 +75,7 @@ img {
 .container-content-1 {
     display: flex;
     flex-direction:column;
-
+    justify-content: space-between;
     margin-left: 10vh;
     margin-right: 10vh;
 }
@@ -51,7 +83,10 @@ img {
     display: flex;
     background-color: #1f2937;
     padding-top: 5vh;
+    justify-content: space-around;
     padding-bottom: 5vh;
+    flex-wrap: wrap;
+    justify-content:center;
 
 }
 
@@ -91,6 +126,8 @@ button.content-1{
 .content-2 {
     display: flex;
     gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction:row;
 }
 .content-2-items {
