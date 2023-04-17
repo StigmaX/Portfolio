@@ -43,15 +43,15 @@ a:link {
 
 .header {
     display: flex;
-    background-color: #1f2937;
+    /* background-color: #1f2937; */
     flex-direction: row;
     right: 0;
     left: 0;
     position: fixed;
-    background: #1C6EA4;
-    background: -moz-linear-gradient(-45deg, #1C6EA4 0%, #2388CB 20%, #000000 100%);
-    background: -webkit-linear-gradient(-45deg, #1C6EA4 0%, #2388CB 20%, #000000 100%);
-    background: linear-gradient(135deg, #1C6EA4 0%, #2388CB 20%, #000000 100%);
+    background: #2388CB;
+    background: -moz-linear-gradient(-45deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
+    background: -webkit-linear-gradient(-45deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
+    background: linear-gradient(135deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
 }
 
 .header ul {
@@ -83,16 +83,18 @@ a:link {
     flex-direction:column;
     justify-content: space-between;
     margin-left: 5px;
+    
 }
 .content-1{
     display: flex;
     background-color: #1f2937;
-    padding-top: 10vh;
+    padding-top: 100px;
     justify-content: space-around;
-    padding-bottom: 5vh;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
+    
 
 }
 
@@ -234,4 +236,9 @@ button.content-1{
     padding: 3vh 6vh;
     background-color : #1f2937;
     color:white;
+    
+    background: #2388CB;
+    background: -moz-linear-gradient(-45deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
+    background: -webkit-linear-gradient(-45deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
+    background: linear-gradient(135deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
 }
