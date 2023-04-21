@@ -9,9 +9,10 @@ body {
 
 /*link*/
 a:link {
-    color: rgb(0, 102, 128);
+    color: rgb(192, 251, 255);
     background-color: transparent;
     text-decoration: none;
+    transition: 0.2s;
   }
   
   a:visited {
@@ -21,15 +22,14 @@ a:link {
   }
   
   a:hover {
-    color: rgb(0, 247, 255);
+    color: rgb(255, 255, 255);
     background-color: transparent;
-    text-decoration: underline;
-  }
+    text-shadow: 2px 2px 4px #000000;
+}
   
   a:active {
-    color: yellow;
+    color: rgb(243, 243, 243);
     background-color: transparent;
-    text-decoration: underline;
   }
 
 #userpic{
@@ -176,6 +176,7 @@ button.content-1{
     color: grey;
     text-align: center;
     width: auto;
+    font-size: 20px;
     transition: 0.3s;
 }
 .content-2-subtext:hover {
@@ -197,15 +198,10 @@ button.content-1{
 
 .content-3-container .caption {
     font-size:30px;
-    font-style: italic;
     align-self: center;
-    font-weight:lighter;
+    font-weight:bold;
 }
 
-.content-3-container .quoter {
-    font-weight: bold;
-    align-self: flex-end;
-}
 
 
 /*content 4*/
@@ -213,21 +209,25 @@ button.content-1{
 .content-4-container {
     display:flex;
     background-color: #3882f6;
-    flex-direction: row;
-    margin: 10vh 20vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+    margin: 10vh 30vh;
     padding: 3vh 6vh;
     color: rgb(255, 255, 255);
     justify-content: space-between;
 
 }
 
-.content-4-container .sign-up {
-    border-radius: 4px;
-    border-color: white;
-    color: white;
-    border: solid 1px;
-    padding: 2px 20px;
-    background-color: #3882f6;
+.content-4-container .contact {
+    font-size: 60px;
+}
+
+.content-4-container .contact-item {
+
+    font-size: 30px;
+    padding : 5px;
 }
 
 .footer {
