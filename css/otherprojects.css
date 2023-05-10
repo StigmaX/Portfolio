@@ -1,6 +1,7 @@
 body {
     background-color: rgba(0, 152, 253, 0.568);
 }
+
 .title, .contents {
     border-radius: 50px;
     width: 50%;
@@ -32,6 +33,11 @@ body {
     margin-top: 25px;
     margin-bottom: 10px;
     width: 25%;
+}
+
+.imagerounded {
+    border-radius: 20px;
+    margin: 5px;
 }
 
 a:link {
