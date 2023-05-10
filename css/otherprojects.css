@@ -27,3 +27,33 @@ body {
     margin: 5px;
 
 }
+
+.img-container {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  a:visited {
+    color: rgb(80, 80, 80);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(65, 65, 65);
+    background-color: transparent;
+    text-shadow: 2px 2px 4px #026777;
+}
+  
+  a:active {
+    color: rgb(124, 124, 124);
+    background-color: transparent;
+  }
