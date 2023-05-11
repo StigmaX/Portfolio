@@ -117,8 +117,10 @@ button.content-1{
     padding-top:5px;
     padding-bottom:5px;
     border: none;
+    cursor: pointer;
     max-width: fit-content;
 }
+
 /*content-2 adn content-3*/
 .content-2-img, .content-3-img {
     background-color: rgb(160, 160, 160);
@@ -188,6 +190,8 @@ button.content-1{
 .content-3 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content-3-container {
@@ -220,7 +224,7 @@ button.content-1{
     align-items: center;
     gap: 30px;
     border-radius: 20px;
-    margin: 10vh 30vh;
+    margin: 40px 100px;
     padding: 3vh 6vh;
     color: rgb(255, 255, 255);
     justify-content: space-between;
