@@ -1,34 +1,36 @@
 html {
     scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     height: 100vh;
     margin: 0;
+    background-color: #8D7B68;
 }
 
 /*link*/
 a:link {
-    color: rgb(192, 251, 255);
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
     transition: 0.2s;
   }
   
   a:visited {
-    color: rgb(192, 251, 255);
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
   
   a:hover {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     background-color: transparent;
     text-shadow: 2px 2px 4px #000000;
 }
   
   a:active {
-    color: rgb(243, 243, 243);
+    color: #F1DEC9;
     background-color: transparent;
   }
 
@@ -48,10 +50,7 @@ a:link {
     right: 0;
     left: 0;
     position: fixed;
-    background: #2388CB;
-    background: -moz-linear-gradient(-45deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
-    background: -webkit-linear-gradient(-45deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
-    background: linear-gradient(135deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
+    background: #8D7B68;
 }
 
 .header ul {
@@ -67,7 +66,7 @@ a:link {
 .header ul li {
     list-style-type: none;
     padding: 10px;
-    color: #ffffff;
+    color: #000000;
     font-size: 20px;
 }
 
@@ -87,20 +86,21 @@ a:link {
 }
 .content-1{
     display: flex;
-    background-color: #1f2937;
-    padding-top: 100px;
+    background-color: #A4907C;
     justify-content: space-around;
     padding-bottom: 20px;
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
-    
+    height: 100vh;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
 
 }
 
 .content-desc,
 .content-text {
-    color: #ffffff;
+    color: #000000;
 }
 .content-desc {
     font-size: 24px;
@@ -109,7 +109,7 @@ a:link {
     font-size: 70px;
 }
 button.content-1{
-    background-color:#0084ff;
+    background-color:#F1DEC9;
     color:white;
     border-radius:7px;
     padding-left: 20px;
@@ -123,7 +123,7 @@ button.content-1{
 
 /*content-2 adn content-3*/
 .content-2-img, .content-3-img {
-    background-color: rgb(160, 160, 160);
+    background-color: #A4907C;
     margin: 2px;
     border-radius:20px;
     width: 200px;
@@ -142,13 +142,15 @@ button.content-1{
 }
 
 .content-2 {
+    gap: 10vh;
     display: flex;
-    gap:20px;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction:row;
+    height: 80vh;
+    
 }
-.content-2-items, .content-3-items {
+.content-2-items {
     display: flex;
     align-items: center;
     max-width: min-content;
@@ -174,8 +176,8 @@ button.content-1{
     font-weight:900;
     margin: 20px;
 }
-.content-2-subtext, .content-3-subtext {
-    color: grey;
+.content-2-subtext {
+    color: rgb(0, 0, 0);
     text-align: center;
     width: auto;
     font-size: 20px;
@@ -192,12 +194,35 @@ button.content-1{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10vh;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.content-3-items {
+    display: flex;
+    align-items: center;
+    max-width: min-content;
+    margin: 20px 20px;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.content-3-subtext {
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-align: left;
+    width: 20vh;
+    font-size: 20px;
+    transition: 0.3s;
 }
 
 .content-3-container {
     scroll-margin-top: 75px;
     display: flex;
-    background-color: #e5e7eb;
+    background-color: #C8B6A6;
     flex-direction:column;
     align-items: center;
     padding-left: 15vh;
@@ -219,7 +244,7 @@ button.content-1{
 .content-4-container {
     scroll-margin-top: 75px;
     display:flex;
-    background-color: #3882f6;
+    background-color: #A4907C;
     flex-direction: column;
     align-items: center;
     gap: 30px;
@@ -233,6 +258,7 @@ button.content-1{
 
 .content-4-container .contact {
     font-size: 60px;
+    color: #000000;
 }
 
 .content-4-container .contact-item {
@@ -246,10 +272,12 @@ button.content-1{
     justify-content: center;
     padding: 3vh 6vh;
     background-color : #1f2937;
-    color:white;
+    color:rgb(0, 0, 0);
     
-    background: #2388CB;
-    background: -moz-linear-gradient(-45deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
-    background: -webkit-linear-gradient(-45deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
-    background: linear-gradient(135deg, #2388CB 0%, #2388CB 20%, #0C2F47 100%);
+    background: #8D7B68;
+   
+}
+
+.highlight {
+    color: #8D7B68;
 }
